@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codex.Word.Net", "Codex.Word.Net\Codex.Word.Net.csproj", "{4ECD75AE-62A9-4EE5-8DE3-196870BE30E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codex.Word.Net.Example", "Codex.Word.Net.Example\Codex.Word.Net.Example.csproj", "{A3012B35-0492-4775-AFF3-58588F36D153}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ECD75AE-62A9-4EE5-8DE3-196870BE30E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECD75AE-62A9-4EE5-8DE3-196870BE30E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECD75AE-62A9-4EE5-8DE3-196870BE30E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECD75AE-62A9-4EE5-8DE3-196870BE30E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3012B35-0492-4775-AFF3-58588F36D153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3012B35-0492-4775-AFF3-58588F36D153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3012B35-0492-4775-AFF3-58588F36D153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3012B35-0492-4775-AFF3-58588F36D153}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15791396-933C-4013-8F54-C15B36D52C9E}
+	EndGlobalSection
+EndGlobal
