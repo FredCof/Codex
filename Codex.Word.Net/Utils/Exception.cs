@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Codex.Word.Net
+namespace Codex.Word.Net.Utils
 {
     [Serializable]
     public class BaseDocxException : Exception

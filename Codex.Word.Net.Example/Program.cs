@@ -13,6 +13,7 @@ namespace Codex.Word.Net.Example
             Docx x = new Docx();
             string style = Base.BaseStyle.Normal.GetDescription();
             Console.WriteLine(style);
+            
         }
     }
 }

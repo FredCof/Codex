@@ -7,6 +7,7 @@
  * summary: Word Operation
  */
 using System;
+using Codex.Word.Net.Utils;
 
 namespace Codex.Word.Net
 {
@@ -20,7 +21,11 @@ namespace Codex.Word.Net
         public Docx()
         {
             string ofDocx = "I am a constructor of Docx";
+            // ReSharper disable once CA1303
             Console.WriteLine(ofDocx);
+            Unit a = new Unit(10, SUnit.Centi);
+            Unit b = Unit.Add(a, a);
+            Console.WriteLine(b);
         }
 
         #endregion

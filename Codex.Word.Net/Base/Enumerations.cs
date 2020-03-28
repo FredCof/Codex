@@ -6,9 +6,11 @@ namespace Codex.Word.Net.Base
     /// <summary>
     /// Get Enum type's Description
     /// </summary>
+    /// <example>
     /// <code>
     /// string _description = BaseStyle.Normal.GetDescription()
     /// </code>
+    /// </example>
     public static class StringExtensions
     {
         public static string GetDescription(this Enum value)
@@ -31,8 +33,9 @@ namespace Codex.Word.Net.Base
     /// </summary>
     public enum BaseStyle
     {
+        /// <summary>Style for Base text</summary>
         [Description("Normal")]
-        Normal = 0,
+        Normal = 0, 
         [Description("Heading1")]
         Heading1,
         [Description("Heading2")]
