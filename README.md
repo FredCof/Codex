@@ -74,15 +74,18 @@ Word格式文档转存PDF
 - footnote
 - watermark
 - pagebreak
+
 伪元素：
 - ::first-line
 - ::first-word
 - ::first-character
+
 伪类：
 - :nth-child()
 - :not()
 - :first-type
 - :first-child
+
 选择方式：
 - \+
 - space
@@ -95,3 +98,9 @@ Word格式文档转存PDF
 使用类似CSS调整文档。
 将类似CSS的文件文件类型设置为.docss。
 读取文件调整格式。
+
+# 大佬博客
+[C#压缩成zip](https://blog.csdn.net/weixin_37744986/article/details/82711713)
+[C#压缩](https://blog.csdn.net/zhulongxi/article/details/51819431)
+[C# IO.packaging](https://www.cnblogs.com/zhaozhan/archive/2012/05/28/2520701.html)
+[stackflow](https://stackoverflow.com/questions/6386113/using-system-io-packaging-to-generate-a-zip-file)

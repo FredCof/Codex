@@ -14,6 +14,7 @@
     <Authors>Cofalconer</Authors>
     <Description>An open source library for manipulating Word documents</Description>
     <Copyright>Cofalconer</Copyright>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +22,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.IO.Packaging" Version="4.6.0-rc1.19456.4" />
   </ItemGroup>
 
   <ItemGroup>

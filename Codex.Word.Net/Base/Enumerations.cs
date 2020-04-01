@@ -13,6 +13,11 @@ namespace Codex.Word.Net.Base
     /// </example>
     public static class StringExtensions
     {
+        /// <summary>
+        /// Get enumeration's description under this namespace
+        /// </summary>
+        /// <param name="value">Enumeration's value,such as BaseStyle.Normal</param>
+        /// <returns>Return the string of description which corresponds to the style id of the style file.</returns>
         public static string GetDescription(this Enum value)
         {
             if (value == null)

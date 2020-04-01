@@ -7,8 +7,10 @@
  * summary: Word Operation
  */
 using System;
+using System.IO;
 using Codex.Word.Net.Components;
 using Codex.Word.Net.Utils;
+using Codex.Word.Net.Base;
 
 namespace Codex.Word.Net
 {
@@ -28,6 +30,11 @@ namespace Codex.Word.Net
             Unit b = Unit.Add(a, a);
             Console.WriteLine(b);
             Paragraph codexP = new Paragraph();
+
+            string srcFolder = @"";
+            string targetFile = @"";
+            // BasePackage.PackageFolder(srcFolder, targetFile, true);
+            BasePackage.Compress(srcFolder, targetFile);
         }
 
         #endregion
