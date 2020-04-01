@@ -7,6 +7,7 @@
  * summary: Word Operation
  */
 using System;
+using Codex.Word.Net.Components;
 using Codex.Word.Net.Utils;
 
 namespace Codex.Word.Net
@@ -26,6 +27,7 @@ namespace Codex.Word.Net
             Unit a = new Unit(10, SUnit.Centi);
             Unit b = Unit.Add(a, a);
             Console.WriteLine(b);
+            Paragraph codexP = new Paragraph();
         }
 
         #endregion

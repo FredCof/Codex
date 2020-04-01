@@ -288,4 +288,14 @@ namespace Codex.Word.Net.Base
         Inset,
         Nil
     }
+
+    public enum Align
+    {
+        Left = 0,
+        Right = 1,
+        Center = 2,
+        Top = 4,
+        Bottom = 8,
+        Vertical = 16,
+    }
 }

@@ -4,53 +4,20 @@ using System;
 using System.Collections.Generic;
 using System.IO.Packaging;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Xml.Linq;
 using Codex.Word.Net.Utils;
 
 namespace Codex.Word.Net.Base
 {
-    internal class NodeTree
+    internal class XML
     {
-        private class Node
+        public XElement Xml { get; set; }
+
+        public XML()
         {
-            private int _hashId;
-            private string _name;
-            private List<Node> _children;
-
-            public int HashIndex {
-                get => _hashId;
-                set => _hashId=value;
-            }
-
-            public string Name
-            {
-                get => _name;
-                set => _name = value;
-            }
-
-            public Node(string name)
-            {
-                _name = name;
-                _children = new List<Node>();
-                // ReSharper disable once CA1307
-                if (name != null) _hashId = name.GetHashCode();
-            }
-
-            public void Append(Node node)
-            {
-                _children.Append(node);
-            }
-
-            public void Prepend(Node node)
-            {
-                _children.Prepend(node);
-            }
-
-            public void Clear()
-            {
-                _children.Clear();
-            }
+            return;
         }
     }
 
@@ -61,7 +28,20 @@ namespace Codex.Word.Net.Base
     {
         #region Members
 
-        private XElement Xml { get; set; }
+        /// <summary>
+        /// This is the XML substance, with will contain:w:p>w:r>w:t
+        /// </summary>
+        public XElement Xml { get; set; }
+
+        #endregion
+
+        #region Constructors
+
+        public BaseElement()
+        {
+            // throw new NotImplementedException(Resource.NoOverride);
+            return;
+        }
 
         #endregion
 
@@ -81,6 +61,15 @@ namespace Codex.Word.Net.Base
                 randomId.Append((char)ascii);
             }
             return randomId.ToString();
+        }
+
+        #endregion
+
+        #region Virtual Methods
+
+        public virtual BaseElement Query(string selector)
+        {
+            throw new NotImplementedException(Resource.NoOverride);
         }
 
         #endregion
