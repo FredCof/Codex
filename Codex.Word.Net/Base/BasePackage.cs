@@ -2,12 +2,11 @@
 using System.IO;
 using System.IO.Compression;
 using System.IO.Packaging;
-using System.Text;
 using System.Web;
 
 namespace Codex.Word.Net.Base
 {
-    public class BasePackage : IDisposable
+    public class BasePackage
     {
         #region Packaging Method
 
@@ -176,8 +175,15 @@ namespace Codex.Word.Net.Base
         /// <returns>If compress successful</returns>
         public static bool Compress(string startPath, string zipPath)
         {
-            ZipFile.CreateFromDirectory(startPath, zipPath);
-            return true;
+            try
+            {
+                ZipFile.CreateFromDirectory(startPath, zipPath);
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -188,15 +194,18 @@ namespace Codex.Word.Net.Base
         /// <returns></returns>
         public static bool Decompress(string zipPath, string extractPath)
         {
-            ZipFile.ExtractToDirectory(zipPath, extractPath);
-            return true;
+            try
+            {
+                ZipFile.ExtractToDirectory(zipPath, extractPath);
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         #endregion
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

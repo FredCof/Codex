@@ -14,7 +14,7 @@ Release Test
 开发参考：[Microsoft dotNet](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/linq/)
 
 ## 计划开发的文档元素
-- [ ] 段落
+- [x] 段落
 - [ ] 图片
 - [ ] 文档信息
 - [ ] 表格
